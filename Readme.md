@@ -139,3 +139,14 @@ To allow frontend apps to call APIs hosted elsewhere, controllers include:
 @CrossOrigin(origins = "*")
 
 This allows requests from all origins.
+
+
+
+### API Testing Detials
+Below are sample screenshots from Postman, showing working API responses for each endpoint:
+
+<img width="1412" height="908" alt="image" src="https://github.com/user-attachments/assets/fed38505-12a9-4639-bdd2-eee459eb7be2" />
+<img width="1442" height="900" alt="image" src="https://github.com/user-attachments/assets/160f10c7-d889-401e-a817-fa6b2c4e6018" />
+<img width="1438" height="925" alt="image" src="https://github.com/user-attachments/assets/94f40d1f-78d6-4f69-82a6-c3dfcbcce66b" />
+
+
