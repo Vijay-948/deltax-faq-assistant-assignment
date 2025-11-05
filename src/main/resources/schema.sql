@@ -1,0 +1,34 @@
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL
+);
+
+
+CREATE TABLE CategoryBO (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) UNIQUE NOT NULL
+);
+
+
+CREATE TABLE TagBO (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) UNIQUE NOT NULL
+);
+
+CREATE TABLE TagBO (
+    id SERIAL PRIMARY KEY,
+    question TEXT NOT NULL,
+    answer TEXT,
+    category_id INTEGER REFERENCES categorybo(id) ON DELETE SET NULL,
+    created_by_id INTEGER REFERENCES users(id) ON DELETE SET NULL,
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE faq_tags (
+    faq_id INTEGER REFERENCES TagBO(id) ON DELETE CASCADE,
+    tag_id INTEGER REFERENCES TagBO(id) ON DELETE CASCADE,
+    PRIMARY KEY (faq_id, tag_id)
+);
