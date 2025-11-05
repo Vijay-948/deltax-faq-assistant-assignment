@@ -1,13 +1,14 @@
 One short intro: “DeltaX FAQ Assistant – Spring Boot + PostgreSQL backend API for managing FAQs.”
 
 Purpose: mention categories, tags, users, and the AI answer suggestion endpoint.
-
+```
 ## 1 Tech Stack
 Java 17
 Spring Boot 3.x
 PostgreSQL
 Hibernate / JPA
 Maven
+```
 
 ## 2 PROJECT STRUCTURE
 src/main/java/com/delta/delta_faq_assistant_assignment/
@@ -26,9 +27,9 @@ schema.sql
 ### 3 Setup Instructions
 
 Clone the repository
-git clone https://github.com/
-<your-username>/deltax-faq-assistant-backend.git
-cd deltax-faq-assistant-backend
+git clone https://github.com/Vijay-948/deltax-faq-assistant-assignment.git
+
+cd deltax-faq-assistant-assignment
 
 Create the PostgreSQL database
 CREATE DATABASE faq_assistant;
