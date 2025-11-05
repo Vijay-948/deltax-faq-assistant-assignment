@@ -47,7 +47,7 @@ mvn spring-boot:run
 
 The server runs at http://localhost:8082
 
-
+```
 ### 4 API Endpoints
   ## 1. USER API (/api/users)
 
@@ -131,7 +131,7 @@ Request:
 "createdOn": "2025-11-05T20:16:08.071162Z",
 "modifiedOn": "2025-11-05T20:16:08.071162Z"
 }
-
+```
 
 ## Cross-Origin Resource Sharing (CORS)
 
