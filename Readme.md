@@ -9,7 +9,7 @@ PostgreSQL
 Hibernate / JPA
 Maven
 ```
-
+```
 ## 2 PROJECT STRUCTURE
 src/main/java/com/delta/delta_faq_assistant_assignment/
 controller/ REST Controllers (FAQ, User, Category, Tag)
@@ -21,7 +21,7 @@ DeltaFaqAssistantAssignmentApplication.java
 src/main/resources/
 application.properties
 schema.sql
-
+```
 
 ```
 ### 3 Setup Instructions
