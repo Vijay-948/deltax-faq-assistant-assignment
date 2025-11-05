@@ -22,7 +22,7 @@ application.properties
 schema.sql
 
 
-
+```
 ### 3 Setup Instructions
 
 Clone the repository
@@ -34,18 +34,21 @@ Create the PostgreSQL database
 CREATE DATABASE faq_assistant;
 
 Update application.properties
-spring.datasource.url=jdbc:postgresql://localhost:5433/faq_assistant
+spring.application.name=delta-faq-assistant-assignment
+server.port=8082
+spring.datasource.url=jdbc:postgresql://localhost:5433/delta_faq_db
 spring.datasource.username=postgres
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-spring.cache.type=simple
+
 
 Run the application
 mvn spring-boot:run
 
 The server runs at http://localhost:8082
+```
 
 ```
 ### 4 API Endpoints
