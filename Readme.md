@@ -1,6 +1,5 @@
 One short intro: “DeltaX FAQ Assistant – Spring Boot + PostgreSQL backend API for managing FAQs.”
 
-Purpose: mention categories, tags, users, and the AI answer suggestion endpoint.
 ```
 ## 1 Tech Stack
 Java 17
