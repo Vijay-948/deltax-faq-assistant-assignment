@@ -1,14 +1,14 @@
 One short intro: “DeltaX FAQ Assistant – Spring Boot + PostgreSQL backend API for managing FAQs.”
 
-Purpose: mention categories, tags, users, and the AI answer suggestion endpoint.
-
+```
 ## 1 Tech Stack
 Java 17
 Spring Boot 3.x
 PostgreSQL
 Hibernate / JPA
 Maven
-
+```
+```
 ## 2 PROJECT STRUCTURE
 src/main/java/com/delta/delta_faq_assistant_assignment/
 controller/ REST Controllers (FAQ, User, Category, Tag)
@@ -20,34 +20,37 @@ DeltaFaqAssistantAssignmentApplication.java
 src/main/resources/
 application.properties
 schema.sql
+```
 
-
-
+```
 ### 3 Setup Instructions
 
 Clone the repository
-git clone https://github.com/
-<your-username>/deltax-faq-assistant-backend.git
-cd deltax-faq-assistant-backend
+git clone https://github.com/Vijay-948/deltax-faq-assistant-assignment.git
+
+cd deltax-faq-assistant-assignment
 
 Create the PostgreSQL database
 CREATE DATABASE faq_assistant;
 
 Update application.properties
-spring.datasource.url=jdbc:postgresql://localhost:5433/faq_assistant
+spring.application.name=delta-faq-assistant-assignment
+server.port=8082
+spring.datasource.url=jdbc:postgresql://localhost:5433/delta_faq_db
 spring.datasource.username=postgres
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-spring.cache.type=simple
+
 
 Run the application
 mvn spring-boot:run
 
 The server runs at http://localhost:8082
+```
 
-
+```
 ### 4 API Endpoints
   ## 1. USER API (/api/users)
 
@@ -131,7 +134,7 @@ Request:
 "createdOn": "2025-11-05T20:16:08.071162Z",
 "modifiedOn": "2025-11-05T20:16:08.071162Z"
 }
-
+```
 
 ## Cross-Origin Resource Sharing (CORS)
 
@@ -139,3 +142,14 @@ To allow frontend apps to call APIs hosted elsewhere, controllers include:
 @CrossOrigin(origins = "*")
 
 This allows requests from all origins.
+
+
+
+### API Testing Detials
+Below are sample screenshots from Postman, showing working API responses for each endpoint:
+
+<img width="1412" height="908" alt="image" src="https://github.com/user-attachments/assets/fed38505-12a9-4639-bdd2-eee459eb7be2" />
+<img width="1442" height="900" alt="image" src="https://github.com/user-attachments/assets/160f10c7-d889-401e-a817-fa6b2c4e6018" />
+<img width="1438" height="925" alt="image" src="https://github.com/user-attachments/assets/94f40d1f-78d6-4f69-82a6-c3dfcbcce66b" />
+
+
